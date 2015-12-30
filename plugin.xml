@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="ionic-plugin-keyboard"
-    version="1.0.8">
+    id="cordova-plugin-crypto"
+    version="1.0.0">
     <name>Crypto</name>
     <description>Crypting utils</description>
     <license>Apache 2.0</license>
