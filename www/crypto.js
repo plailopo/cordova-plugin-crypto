@@ -20,7 +20,6 @@ function Crypto() {
 }
 
 Crypto.prototype.encrypt = function(phrase, key, cb, opt) {
-	argscheck.checkArgs('fF', 'Crypto.encrypt', arguments);
     exec(cb, function(err){cb(err);}, "Crypto", "AESencrypt", [phrase, key, opt]);
 };
 
