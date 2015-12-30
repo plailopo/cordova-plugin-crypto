@@ -10,16 +10,16 @@
     <repo>https://github.com/plailopo/cordova-plugin-crypto.git</repo>
     <issue>https://github.com/plailopo/cordova-plugin-crypto/issues</issue>
 
+	<js-module src="www/crypto.js" name="crypto">
+        <clobbers target="crypto" />
+    </js-module>
+	
     <!-- android -->
     <platform name="android">
-        <js-module src="www/android/crypto.js" name="crypto">
-            <runs/>
-            <clobbers target="cordova.plugins.Crypto" />
-        </js-module>
+
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Crypto">
               <param name="android-package" value="org.plailopo.crypto.Crypto" />
-              <param name="onload" value="true" />
             </feature>
         </config-file>
 
