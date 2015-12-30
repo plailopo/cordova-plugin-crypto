@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-crypto",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "cordova-plugin-crypto",
+    "platforms": [
+      "android"
+    ]
+  },
+  "description": "Cordova Crypting plugin",
+  "repository": "https://github.com/plailopo/cordova-plugin-crypto.git",
+  "issue": "https://github.com/plailopo/cordova-plugin-crypto/issues",
+  "keywords": [
+    "cordova",
+    "crypting",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Plailopo",
+  "license": "Apache 2.0"
+}

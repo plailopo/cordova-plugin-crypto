@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="ionic-plugin-keyboard"
+    version="1.0.8">
+    <name>Crypto</name>
+    <description>Crypting utils</description>
+    <license>Apache 2.0</license>
+    <keywords>Cordova, crypting</keywords>
+    <repo>https://github.com/plailopo/cordova-plugin-crypto.git</repo>
+    <issue>https://github.com/plailopo/cordova-plugin-crypto/issues</issue>
+
+    <!-- android -->
+    <platform name="android">
+        <js-module src="www/android/crypto.js" name="crypto">
+            <runs/>
+            <clobbers target="cordova.plugins.Crypto" />
+        </js-module>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Crypto">
+              <param name="android-package" value="org.plailopo.crypto.Crypto" />
+              <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Crypto.java" target-dir="src/org/plailopo/crypto" />
+    </platform>
+
+</plugin>
