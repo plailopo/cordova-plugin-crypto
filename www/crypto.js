@@ -5,18 +5,11 @@ var argscheck = require('cordova/argscheck'),
     exec = require('cordova/exec'),
     cordova = require('cordova');
 
-channel.createSticky('onCordovaInfoReady');
-// Tell cordova channel to wait on the CordovaInfoReady event
-channel.waitForInitialization('onCordovaInfoReady');
-
 
 function Crypto() {
 
     this.pluginName = "Crypto";
 
-	channel.onCordovaReady.subscribe(function() {
-
-    });
 }
 
 Crypto.prototype.encrypt = function(phrase, key, cb, opt) {
